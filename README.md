@@ -40,16 +40,21 @@ Izaberite Polikliniku i uvjerite se u našu kvalitetu!
 -	Medicinska sestra obrađuje zahtjeve za pregled i zakazuje termine pacijentima.
 -	Medicinska sestra ima uvid u bazu lijekova klinike.
   ###  Administrator:
--	Administrator ima mogućnost brisanja i kreiranja korisničkih računa.
+-	Administrator briše i dodaje pacijente i njihove kartone.
+- Daje privilegije zaposlenicima (doktorima/medicinskim sestrama) kao i pacijentima (status pacijenta).
 
 ## Funkcionalnosti:
--	Mogućnost kreiranja i ažuriranja korisničkog računa
--	Mogućnost unosa i pregleda laboratirijskih nalaza
+- Unos i brisanje pacijenata iz baze poliklinike
+- Uvid u kartone pacijenata
+- Uvid u terapije, nalaze i historiju bolesti (vezano uz kartone)
+- Zakazivanje termina pregleda
+-	Ažuriranje i unos podataka u kartonima
+-	Uvid u bazu podataka lijekova
 
 ## Akteri
--	Korisnik usluga-osoba koja ima mogućnost kreiranja vlastitog računa i uvida u laboratorijske nalaze i terapiju
--	Doktor- osoba koja ima mogućnost pristupa korisničkom računu pacijenta u svrhu unosa i pregleda rezultata laboratorijskih nalaza
--	Medicinska sestra- osoba koja ima mogućnost pregleda terapije pacijenata, uvid u bazu lijekova i izdavanje lijekova pacijentima
+-	Pacijent (korisnik usluga)-osoba koja ima mogućnost kreiranja vlastitog računa (uz pomoć administratora), uvid u nalaze, terapiju i termine pregleda
+-	Doktor- osoba koja ima mogućnost pristupa kartonu pacijenta u svrhu unosa/ažuriranja i pregleda rezultata laboratorijskih nalaza
+-	Medicinska sestra- osoba koja ima mogućnost pregleda terapije pacijenata, uvid u bazu lijekova , izdavanje lijekova pacijentima kao i zakazivanje termina terapije
 -	Administrator- osoba koja unosi i ažurira podatke, održava bazu podataka i reguliše prava pristupa
 
 
