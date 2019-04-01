@@ -23,13 +23,17 @@ Izaberite Polikliniku i uvjerite se u našu kvalitetu!
 
 
 ## Procesi:
+  
+  ### - Korisnik:
 -	Korisnik kreira vlastiti račun, pri čemu unosi sljedeće podatke: ime, prezime, username, password, e-mail, spol i datum rođenja. Također potrebno je unijeti visinu, težinu i fizičku aktivnost. Korisnik popunjava formular o prethodnim bolestima tako što treba selektovati navedena oboljenja i napisati koje lijekove trenutno ima prepisane (ako ima).
 -	Korisnik ima uvid u svoj karton.
 -	Korisnik ima mogućnost pregleda svojih nalaza koje je obavio u poliklinici.
 -	Korisnik ima mogućnost uvida u svoju terapiju.
 -	Korisnik ima mogućnost zakazivanja termina pregleda.
+  ### - Doktor:
 -	Doktor ima mogućnost uvida u sve kartone.
 -	Doktor ima mogućnost promjene i unosa u sve kartone, terapije, nalaze i preglede koje ima zakazane.
+  ### - Medicinska sestra:
 -	Medicinska sestra ima mogućnost uvida u terapije pacijenta.
 -	Medicinska sestra ima mogućnost zakazivanja termina pacijentima.
 -	Medicinska sestra ima uvid u bazu lijekova klinike.
