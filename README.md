@@ -41,7 +41,7 @@ Izaberite Polikliniku i uvjerite se u našu kvalitetu!
 -	Medicinska sestra ima uvid u terapije pacijenta.
 -	Medicinska sestra obrađuje zahtjeve za pregled i zakazuje termine pacijentima.
 -	Medicinska sestra ima uvid u bazu lijekova klinike.
-  ### Administrator:
+  ###  Administrator:
 -	Administrator briše i dodaje pacijente i njihove kartone.
 - Daje privilegije zaposlenicima (doktorima/medicinskim sestrama) kao i pacijentima (status pacijenta).
 
