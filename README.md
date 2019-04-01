@@ -7,9 +7,10 @@
 
 
 ### Članovi tima:
-1. Amra Dadić
-2. Emir Pita
-3. Lino Bevanda
+1. [Amra Dadić] (https://github.com/adadic1)
+2. [Emir Pita]  (https://github.com/epita1)
+3. [Lino Bevanda]  (https://github.com/lino2007)
+
 
 ## Opis teme:
 Otvorili ste vrhunsku polikliniku, imate mnogobrojno stručno doktorsko osoblje, prvoklasnu medicinsku opremu ,a nemate adekvatan informacioni sistem? Tržište je ogromno i vrlo teško ćete naći kvalitetno, a jednostavno programsko rješenje. Bez brige, naša aplikacija će biti rješenje za sve vaše probleme. 
