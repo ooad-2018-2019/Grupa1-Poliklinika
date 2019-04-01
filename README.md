@@ -7,9 +7,9 @@
 
 
 ### Članovi tima:
-1. [Amra Dadić] (https://github.com/adadic1)
-2. [Emir Pita]  (https://github.com/epita1)
-3. [Lino Bevanda]  (https://github.com/lino2007)
+1. [Amra Dadić](https://github.com/adadic1)
+2. [Emir Pita](https://github.com/epita1)
+3. [Lino Bevanda](https://github.com/lino2007)
 
 
 ## Opis teme:
