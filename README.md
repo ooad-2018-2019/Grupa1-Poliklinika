@@ -24,19 +24,22 @@ Izaberite Polikliniku i uvjerite se u našu kvalitetu!
 
 ## Procesi:
   
-  ### - Korisnik:
--	Korisnik kreira vlastiti račun, pri čemu unosi sljedeće podatke: ime, prezime, username, password, e-mail, spol i datum rođenja. Također potrebno je unijeti visinu, težinu i fizičku aktivnost. Korisnik popunjava formular o prethodnim bolestima tako što treba selektovati navedena oboljenja i napisati koje lijekove trenutno ima prepisane (ako ima).
--	Korisnik ima uvid u svoj karton.
--	Korisnik ima mogućnost pregleda svojih nalaza koje je obavio u poliklinici.
--	Korisnik ima mogućnost uvida u svoju terapiju.
--	Korisnik ima mogućnost zakazivanja termina pregleda.
-  ### - Doktor:
--	Doktor ima mogućnost uvida u sve kartone.
--	Doktor ima mogućnost promjene i unosa u sve kartone, terapije, nalaze i preglede koje ima zakazane.
-  ### - Medicinska sestra:
--	Medicinska sestra ima mogućnost uvida u terapije pacijenta.
--	Medicinska sestra ima mogućnost zakazivanja termina pacijentima.
+  ### Pacijent:
+-	Pacijent kreira vlastiti račun, pri čemu unosi sljedeće podatke: ime, prezime, šifru, e-mail, spol ,datum rođenja i mjesto rođenja. Također potrebno je unijeti visinu, težinu i fizičku aktivnost. Pacijent popunjava formular o prethodnim bolestima tako što treba selektovati navedena oboljenja i napisati koje lijekove trenutno ima prepisane (ako ima).
+- Pacijent zakazuje termin pregleda.
+- Pacijent ima uvid u karton što uključuje sljedeće:
+     -	Pregled svojih nalaza koje je obavio u poliklinici. 
+     -	Uvid u terapiju koju trenutno uzima.
+  ###  Doktor:
+-	Doktor ima mogućnost uvida u sve kartone svakog pacijenta.
+- Pregled vlastitog rasporeda i termina kada su zakazani pacijenti.
+-	Doktor vrši izmjene u kartonima
+- Doktor dodaje terapije, nalaze u karton te kreira zahtjev za preglede.
+  ###  Medicinska sestra:
+-	Medicinska sestra ima uvid u terapije pacijenta.
+-	Medicinska sestra obrađuje zahtjeve za pregled i zakazuje termine pacijentima.
 -	Medicinska sestra ima uvid u bazu lijekova klinike.
+  ###  Administrator:
 -	Administrator ima mogućnost brisanja i kreiranja korisničkih računa.
 
 ## Funkcionalnosti:
