@@ -7,9 +7,9 @@
 
 
 #### Članovi tima:
-1.Amra Dadić
-2.Emir Pita
-3.Lino Bevanda
+1. Amra Dadić
+2. Emir Pita
+3. Lino Bevanda
 
 ## Opis teme:
 ..
