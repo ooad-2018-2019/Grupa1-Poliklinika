@@ -22,7 +22,7 @@ Previše brinete, jer pouzdanost i stabilnost su jedni od mnogih aduta naše apl
 
 Izaberite Polikliniku i uvjerite se u našu kvalitetu!
 
->"Where you matter first."
+>"Where you come first."
 
 ## Procesi:
   
