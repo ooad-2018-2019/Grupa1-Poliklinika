@@ -12,7 +12,10 @@
 3. Lino Bevanda
 
 ## Opis teme:
-Otvorili ste vrhunsku polikliniku, imate mnogobrojno stručno doktorsko osoblje, prvoklasnu medicinsku opremu ,a nemate adekvatan informacioni sistem? Tržište je ogromno i vrlo teško ćete naći kvalitetno, a jednostavno programsko rješenje. Bez brige, naša aplikacija će biti rješenje za sve vaše probleme. Mnogobrojne aplikacije za poliklinike su se pokazale poprilično kompleksne za korištenje i sklone su kvarovima što nije slučaj naše aplikacije (Poliklinika) koja će vam omogućiti jednostavno i ugodno korištenje.Imat ćete detaljan uvid u doktorsko osoblje, kartone pacijenata kao i uvid u bazu lijekova klinike.
+Otvorili ste vrhunsku polikliniku, imate mnogobrojno stručno doktorsko osoblje, prvoklasnu medicinsku opremu ,a nemate adekvatan informacioni sistem? Tržište je ogromno i vrlo teško ćete naći kvalitetno, a jednostavno programsko rješenje. Bez brige, naša aplikacija će biti rješenje za sve vaše probleme. 
+
+Mnogobrojne aplikacije za poliklinike su se pokazale poprilično kompleksne za korištenje i sklone su kvarovima što nije slučaj naše aplikacije (Poliklinika) koja će vam omogućiti jednostavno i ugodno korištenje.Imat ćete detaljan uvid u doktorsko osoblje, kartone pacijenata kao i uvid u bazu lijekova klinike.
+
 Imate neugodnosti sa izmjenom, dodavanjem kartona? Strah vas je da ne izgubite podatke o vašim pacijentima?
 Previše brinete, jer pouzdanost i stabilnost su jedni od mnogih aduta naše aplikacije!
 
