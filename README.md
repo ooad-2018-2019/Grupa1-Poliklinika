@@ -32,16 +32,16 @@ Izaberite Polikliniku i uvjerite se u našu kvalitetu!
 - Pacijent ima uvid u karton što uključuje sljedeće:
      -	Pregled svojih nalaza koje je obavio u poliklinici. 
      -	Uvid u terapiju koju trenutno uzima.
-  ###  Doktor:
+  ### Doktor:
 -	Doktor ima mogućnost uvida u sve kartone svakog pacijenta.
 - Pregled vlastitog rasporeda i termina kada su zakazani pacijenti.
 -	Doktor vrši izmjene u kartonima
 - Doktor dodaje terapije, nalaze u karton te kreira zahtjev za preglede.
-  ###  Medicinska sestra:
+  ### Medicinska sestra:
 -	Medicinska sestra ima uvid u terapije pacijenta.
 -	Medicinska sestra obrađuje zahtjeve za pregled i zakazuje termine pacijentima.
 -	Medicinska sestra ima uvid u bazu lijekova klinike.
-  ###  Administrator:
+  ### Administrator:
 -	Administrator briše i dodaje pacijente i njihove kartone.
 - Daje privilegije zaposlenicima (doktorima/medicinskim sestrama) kao i pacijentima (status pacijenta).
 
