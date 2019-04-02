@@ -12,7 +12,7 @@
 3. [Lino Bevanda](https://github.com/lino2007)
 
 
-## Opis teme:
+## Opis teme
 Otvorili ste vrhunsku polikliniku, imate mnogobrojno stručno doktorsko osoblje, prvoklasnu medicinsku opremu ,a nemate adekvatan informacioni sistem? Tržište je ogromno i vrlo teško ćete naći kvalitetno, a jednostavno programsko rješenje. Bez brige, naša aplikacija će biti rješenje za sve vaše probleme. 
 
 Mnogobrojne aplikacije za poliklinike su se pokazale poprilično kompleksne za korištenje i sklone su kvarovima što nije slučaj naše aplikacije (Poliklinika) koja će vam omogućiti jednostavno i ugodno korištenje.Imat ćete detaljan uvid u doktorsko osoblje, kartone pacijenata kao i uvid u bazu lijekova klinike.
@@ -24,7 +24,7 @@ Izaberite Polikliniku i uvjerite se u našu kvalitetu!
 
 >"Where you come first."
 
-## Procesi:
+## Procesi
   
   ### Pacijent:
 -	Pacijent kreira vlastiti račun, pri čemu unosi sljedeće podatke: ime, prezime, šifru, e-mail, spol ,datum rođenja i mjesto rođenja. Također potrebno je unijeti visinu, težinu i fizičku aktivnost. Pacijent popunjava formular o prethodnim bolestima tako što treba selektovati navedena oboljenja i napisati koje lijekove trenutno ima prepisane (ako ima).
@@ -41,11 +41,11 @@ Izaberite Polikliniku i uvjerite se u našu kvalitetu!
 -	Medicinska sestra ima uvid u terapije pacijenta.
 -	Medicinska sestra obrađuje zahtjeve za pregled i zakazuje termine pacijentima.
 -	Medicinska sestra ima uvid u bazu lijekova klinike.
-  ###  Administrator:
+  ### Administrator:
 -	Administrator briše i dodaje pacijente i njihove kartone.
 - Daje privilegije zaposlenicima (doktorima/medicinskim sestrama) kao i pacijentima (status pacijenta).
 
-## Funkcionalnosti:
+## Funkcionalnosti
 - Unos i brisanje pacijenata iz baze poliklinike
 - Uvid u kartone pacijenata
 - Uvid u terapije, nalaze i historiju bolesti (vezano uz kartone)
