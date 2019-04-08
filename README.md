@@ -30,7 +30,7 @@ Izaberite Polikliniku i uvjerite se u našu kvalitetu!
 -	Pacijent kreira vlastiti račun, pri čemu unosi sljedeće podatke: ime, prezime, šifru, e-mail, spol ,datum rođenja i mjesto rođenja. Također potrebno je unijeti visinu, težinu i fizičku aktivnost. Pacijent popunjava formular o prethodnim bolestima tako što treba selektovati navedena oboljenja i napisati koje lijekove trenutno ima prepisane (ako ima).
 - Pacijent podnosi zahtjev za zakazivanje termina pregleda.
 - Pacijent ima uvid u karton što uključuje sljedeće:
-     -	Pregled svojih nalaza koje je obavio u poliklinici. 
+     -	Uvid u nalaze koje je izvadio u poliklinici. 
      -	Uvid u terapiju koju trenutno uzima.
   ### Doktor:
 -	Doktor ima mogućnost uvida u sve kartone svakog pacijenta.
