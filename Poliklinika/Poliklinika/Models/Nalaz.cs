@@ -18,6 +18,7 @@ namespace Poliklinika.Models
 
         public Nalaz()
         {
+            //test test   d
         }
     }
 }

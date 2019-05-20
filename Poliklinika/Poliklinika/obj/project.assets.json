@@ -12078,11 +12078,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lino\\source\\repos\\Poliklinika\\Poliklinika\\Poliklinika.csproj",
+      "projectUniqueName": "C:\\Users\\Lino\\Source\\Repos\\Grupa1-Poliklinika\\Poliklinika\\Poliklinika\\Poliklinika.csproj",
       "projectName": "Poliklinika",
-      "projectPath": "C:\\Users\\Lino\\source\\repos\\Poliklinika\\Poliklinika\\Poliklinika.csproj",
+      "projectPath": "C:\\Users\\Lino\\Source\\Repos\\Grupa1-Poliklinika\\Poliklinika\\Poliklinika\\Poliklinika.csproj",
       "packagesPath": "C:\\Users\\Lino\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lino\\source\\repos\\Poliklinika\\Poliklinika\\obj\\",
+      "outputPath": "C:\\Users\\Lino\\Source\\Repos\\Grupa1-Poliklinika\\Poliklinika\\Poliklinika\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
