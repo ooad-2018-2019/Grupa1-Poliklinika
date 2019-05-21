@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Poliklinika.Models
 {
-    public class Termin
+    public class Termin 
     {
         public DateTime vrijemePocetka { get; set; }
         public DateTime vrijemeKraja { get; set; }
