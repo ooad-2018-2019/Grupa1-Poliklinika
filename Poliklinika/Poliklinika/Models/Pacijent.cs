@@ -7,6 +7,7 @@ namespace Poliklinika.Models
 {
     public class Pacijent : IUvidUKarton, IZakazivanjeTermina
     {
+
         public void dodajTermin(Termin termin)
         {
             throw new NotImplementedException();
