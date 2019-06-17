@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace Poliklinika.Models
 {
     public class Administrator : IBazaLijekova, IBazaPoliklinike
+        ///amra je tu tesriram pushanje
     {
         const String maxIdPacijentaQuery = "SELECT MAX(id) FROM dbo.Poliklinika_Pacijent";
         const String maxIdOsobeQuery= "SELECT MAX(id) FROM dbo.Poliklinika_Osoba";
@@ -48,7 +49,7 @@ namespace Poliklinika.Models
                     // sb.Append("FROM dbo.Poliklinika_Osoba pc; ");
                     SqlCommand cmd = new SqlCommand(@"INSERT INTO dbo.Poliklinika_Osoba (id, Nominativo)
                                   VALUES (@Id, @Nominativo)", connection);
-                    cmd.Parameters.Add(new SqlParameter("Id", vratiNajveciID(maxIdPacijentaQuery));
+                    cmd.Parameters.Add(new SqlParameter("Id", vratiNajveciID(maxIdPacijentaQuery)));
                     cmd.Parameters.Add(new SqlParameter("Nominativo", "MARIO ROSSI"));
                     cmd.ExecuteNonQuery();
 

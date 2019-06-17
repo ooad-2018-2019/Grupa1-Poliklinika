@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Poliklinika",
+    "\\Poliklinika\\Poliklinika",
+    "\\Poliklinika\\Poliklinika\\Views",
+    "\\Poliklinika\\Poliklinika\\Views\\Home",
+    "\\Poliklinika\\Poliklinika\\Views\\Home\\Shared",
     "\\resources"
   ],
-  "SelectedNode": "\\Poliklinika\\Poliklinika.sln",
+  "SelectedNode": "\\Poliklinika\\Poliklinika\\Views\\_ViewImports.cshtml",
   "PreviewInSolutionExplorer": false
 }
