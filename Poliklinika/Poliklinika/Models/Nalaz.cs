@@ -7,11 +7,26 @@ namespace Poliklinika.Models
 {
     public class Nalaz
     {
-        public DateTime datumNalaza { get; set; }
-        public String detaljiNalaza { get; set; }
+        private String _tipNalaza;
+        private String _detaljiNalaza;
+        private DateTime _datumNalaza;
 
-        public Nalaz(DateTime datumNalaza, string detaljiNalaza)
+        public DateTime DatumNalaza { get;
+            set
+            {
+                if(value>=DateTime.Now)
+                {
+                    throw new ArgumentException("Nalaz ne može biti urađen u budućnosti");
+                }
+                _datumNalaza = value;
+            }
+        }
+        public String DetaljiNalaza { get; set; }
+        public String TipNalaza { get; set; }
+
+        public Nalaz(String tip, DateTime datumNalaza, string detaljiNalaza)
         {
+            this.TipNalaza = tip;
             this.datumNalaza = datumNalaza;
             this.detaljiNalaza = detaljiNalaza;
         }
