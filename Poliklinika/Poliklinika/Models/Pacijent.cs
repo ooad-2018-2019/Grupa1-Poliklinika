@@ -9,11 +9,11 @@ namespace Poliklinika.Models
     {
         public Pacijent(string ime, string prezime, string email, string mjestoRodjenja, DateTime datumRodjenja) : base(ime, prezime, email, mjestoRodjenja, datumRodjenja)
             {
-            this.ime = ime;
-            this.prezime = prezime;
-            this.email = email;
-            this.mjestoRodjenja = mjestoRodjenja;
-            this.datumRodjenja = datumRodjenja;
+            this.Ime = ime;
+            this.Prezime = prezime;
+            this.Email = email;
+            this.MjestoRodjenja = mjestoRodjenja;
+            this.DatumRodjenja = datumRodjenja;
 
             }
 

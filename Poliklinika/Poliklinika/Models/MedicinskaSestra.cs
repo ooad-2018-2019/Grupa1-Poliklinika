@@ -5,8 +5,18 @@ using System.Threading.Tasks;
 
 namespace Poliklinika.Models
 {
-    public class MedicinskaSestra : IBazaLijekova, IZakazivanjeTermina, IUvidUKarton
+    public class MedicinskaSestra : Osoba,IBazaLijekova, IZakazivanjeTermina, IUvidUKarton
     {
+        public MedicinskaSestra(string ime, string prezime, string email, string mjestoRodjenja, DateTime datumRodjenja) : base(ime, prezime, email, mjestoRodjenja, datumRodjenja)
+            {
+            this.Ime = ime;
+            this.Prezime = prezime;
+            this.Email = email;
+            this.MjestoRodjenja = mjestoRodjenja;
+            this.DatumRodjenja = datumRodjenja;
+
+            }
+
         public void azurirajLijek(Lijek lijek)
         {
             throw new NotImplementedException();

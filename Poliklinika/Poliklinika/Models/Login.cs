@@ -13,13 +13,13 @@ namespace Poliklinika.Models
 
         public Login(Osoba osoba, string username, string password)
         {
-            this.Osoba = osoba;
-            this.Username = username;
-            this.Password = password;
+            this.osoba = osoba;
+            this.username = username;
+            this.password = password;
         }
 
-        public Osoba Osoba { get => _osoba; set => _osoba = value; }
-        public string Username { get => _username; set => _username = value; }
-        public string Password { get => _password; set => _password = value; }
+        public Osoba osoba { get => _osoba; set => _osoba = value; }
+        public string username { get => _username; set => _username = value; }
+        public string password { get => _password; set => _password = value; }
     }
 }

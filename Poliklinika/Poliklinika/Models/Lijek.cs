@@ -12,17 +12,17 @@ namespace Poliklinika.Models
         private String _detalji;
         private int _kolicina;
 
-        public String NazivLijeka { get;
+        public String NazivLijeka { get { return _naziv; }
             set
             {
-                if(!Poliklinika.Models.Poliklinika.isAlphaNumeric(value))
+                if(!Poliklinika.isAlphaNumeric(value))
                 {
                     throw new ArgumentException("Naziv lijeka nije ispravan");
                 }
                 _naziv = value;
             }
         }
-        public DateTime RokLijeka { get;
+        public DateTime RokLijeka { get { return _rok; }
             set
             {
                 if(value<=DateTime.Now)
@@ -33,7 +33,7 @@ namespace Poliklinika.Models
                 _rok = value;
             }
         }
-        public int Kolicina { get;
+        public int Kolicina { get { return _kolicina; }
             set
             {
                 if(value<0)
@@ -48,10 +48,10 @@ namespace Poliklinika.Models
 
         public Lijek(string nazivLijeka, DateTime rokLijeka, string detaljiLijeka, int kolicina)
         {
-            this.nazivLijeka = nazivLijeka;
-            this.rokLijeka = rokLijeka;
-            this.detaljiLijeka = detaljiLijeka;
-            this.kolicina = kolicina;
+            this.NazivLijeka = nazivLijeka;
+            this.RokLijeka = rokLijeka;
+            this.Detalji = detaljiLijeka;
+            this.Kolicina = kolicina;
         }
 
         public Lijek()
