@@ -86,7 +86,14 @@ FROM [dbo].[Poliklinika_Osoba] */
 SqlCommand cmd = new SqlCommand(@"INSERT INTO dbo.Poliklinika_Osoba (id,ime, prezime, DatumRodjenja, email, MjestoRodjenja)
               VALUES (@id, @ime, @prezime, @DatumRodjenja, @email, @MjestoRodjenja )", connection);
 cmd.Parameters.Add(new SqlParameter("id", vratiNajveciID(maxIdPacijentaQuery)));
-cmd.Parameters.Add(new SqlParameter("ime", login.osoba));
+cmd.Parameters.Add(new SqlParameter("ime", login.osoba.ime));
+cmd.Parameters.Add(new SqlParameter("prezime", login.osoba.prezime));
+cmd.Parameters.Add(new SqlParameter("DatumRodjenja", login.osoba.datumRodjenja));
+cmd.Parameters.Add(new SqlParameter("email", login.osoba.email));
+cmd.Parameters.Add(new SqlParameter("MjestoRodjenja", login.osoba.mjestoRodjenja));
+
+                    
+                    
 cmd.ExecuteNonQuery();
 
 }

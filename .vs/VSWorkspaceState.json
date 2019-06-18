@@ -3,11 +3,13 @@
     "",
     "\\Poliklinika",
     "\\Poliklinika\\Poliklinika",
+    "\\Poliklinika\\Poliklinika\\Models",
     "\\Poliklinika\\Poliklinika\\Views",
     "\\Poliklinika\\Poliklinika\\Views\\Home",
     "\\Poliklinika\\Poliklinika\\Views\\Home\\Shared",
+    "\\Poliklinika\\Poliklinika\\Views\\MainForm",
     "\\resources"
   ],
-  "SelectedNode": "\\Poliklinika\\Poliklinika.sln",
+  "SelectedNode": "\\Poliklinika\\Poliklinika\\Models\\Administrator.cs",
   "PreviewInSolutionExplorer": false
 }

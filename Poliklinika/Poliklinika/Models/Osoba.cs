@@ -2,17 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace Poliklinika.Models
 {
     public abstract class Osoba 
     {
-        private String ime { public get;
-            public set
+        private String _ime;
+        public String ime {  
+get {
+                return _ime;
+                }
+set
             {
                 if(isAlphaNumeric(value))
                 {
-                    ime = value;
+                    _ime = value;
                 }
                 else
                 {
@@ -20,10 +25,10 @@ namespace Poliklinika.Models
                 }
             }
         }
-        private String prezime { public get; public set; }
-        private String email { public get; public set; }
-        private String mjestoRodjenja { public get;  public set; }
-        private DateTime datumRodjenja { public get; public set; }
+        public String prezime {  get;  set; }
+        public String email {  get;  set; }
+        public String mjestoRodjenja {  get;   set; }
+        public DateTime datumRodjenja {  get;  set; }
 
         public Osoba(string ime, string prezime, string email, string mjestoRodjenja, DateTime datumRodjenja)
         {
