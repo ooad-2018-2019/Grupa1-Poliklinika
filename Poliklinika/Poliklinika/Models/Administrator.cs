@@ -41,12 +41,51 @@ namespace Poliklinika.Models
             throw new NotImplementedException();
             }
 
-        public Lijek dodajLijek()
+        public void dodajLijek(Lijek lijek)
             {
+            try
+                {
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                builder.DataSource = "ehlimanatest.database.windows.net";
+                builder.UserID = "Ehlimana";
+                builder.Password = "Ooad2019";
+                builder.InitialCatalog = "Database 1";
 
-            throw new NotImplementedException();
+
+
+
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                    {
+
+                    connection.Open();
+                    StringBuilder sb = new StringBuilder();
+
+
+                    SqlCommand cmdZaTabeluOsoba = new SqlCommand(@"INSERT INTO dbo.Poliklinika_Osoba (id,nazivLijeka, rok, detalji, kolicina, idTerapija)
+                    VALUES (@id, @nazivLijeka, @rok, @detalji, @kolicina, @idTerapija )", connection);
+                    int maxId = vratiNajveciID("SELECT MAX(ID) FROM dbo.Poliklinika_Lijek");
+                    cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("id", maxId));
+                    cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("nazivLijeka", lijek.NazivLijeka));
+                    cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("rok", lijek.RokLijeka));
+                    cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("detalji", lijek.Detalji));
+                    cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("kolicina", lijek.Kolicina));
+                    cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("idTerapija", null));
+
+
+                    cmdZaTabeluOsoba.ExecuteNonQuery();
+
+                    connection.Close();
+
+
+
+
+                    }
+                }
+            catch (SqlException e)
+                {
+                throw new Exception("Greska prilikom dodavanja medicinske sestre ili doktora : " + e);
+                }
             }
-
 
 
 
@@ -283,7 +322,38 @@ namespace Poliklinika.Models
 
         public void ukloniLijek(Lijek lijek)
             {
-            throw new NotImplementedException();
+            try
+                {
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                builder.DataSource = "ehlimanatest.database.windows.net";
+                builder.UserID = "Ehlimana";
+                builder.Password = "Ooad2019";
+                builder.InitialCatalog = "Database 1";
+
+
+
+
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                    {
+
+                    connection.Open();
+                    StringBuilder sb = new StringBuilder();
+
+                    String sql = "DELETE FROM dbo.Poliklinika_Lijek" + " WHERE nazivLijeka LIKE '" + lijek.NazivLijeka + "' ;";
+                    SqlCommand cmdZaTabeluOsoba = new SqlCommand(sql, connection);
+                    cmdZaTabeluOsoba.ExecuteNonQuery();
+
+                    connection.Close();
+
+
+
+
+                    }
+                }
+            catch (SqlException e)
+                {
+                throw new Exception("Greska prilikom dodavanja medicinske sestre ili doktora : " + e);
+                }
             }
 
 
