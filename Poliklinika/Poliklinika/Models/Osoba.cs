@@ -7,13 +7,25 @@ namespace Poliklinika.Models
 {
     public abstract class Osoba 
     {
-        private String ime { get; set; }
-        private String prezime { get; set; }
-        private String email { get; set; }
-        private String mjestoRodjenja { get; set; }
-        private DateTime datumRodjenja { get; set; }
+        private String ime { public get;
+            public set
+            {
+                if(isAlphaNumeric(value))
+                {
+                    ime = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Nije uneseno valjano ime");
+                }
+            }
+        }
+        private String prezime { public get; public set; }
+        private String email { public get; public set; }
+        private String mjestoRodjenja { public get;  public set; }
+        private DateTime datumRodjenja { public get; public set; }
 
-        protected Osoba(string ime, string prezime, string email, string mjestoRodjenja, DateTime datumRodjenja)
+        public Osoba(string ime, string prezime, string email, string mjestoRodjenja, DateTime datumRodjenja)
         {
             this.ime = ime;
             this.prezime = prezime;
@@ -22,8 +34,15 @@ namespace Poliklinika.Models
             this.datumRodjenja = datumRodjenja;
         }
 
-        protected Osoba()
+        public Osoba()
         {
         }
+
+        private static Boolean isAlphaNumeric(string strToCheck)
+        {
+            Regex rg = new Regex(@"^[a-zA-Z0-9\s,]*$");
+            return rg.IsMatch(strToCheck);
+        }
+
     }
 }
