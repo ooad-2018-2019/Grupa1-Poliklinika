@@ -22,7 +22,7 @@ namespace Poliklinika.Models
 
             set
             {
-                if(isAlphaNumeric(value))
+                if(Poliklinika.Models.Poliklinika.isAlphaNumeric(value))
                 {
                     _ime = value;
                 }
@@ -35,7 +35,7 @@ namespace Poliklinika.Models
         public String Prezime {  get;
             set
             {
-                if(isAlphaNumeric(value))
+                if(Poliklinika.Models.Poliklinika.isAlphaNumeric(value))
                 {
                     _prezime = value;
                 } else
@@ -49,7 +49,7 @@ namespace Poliklinika.Models
             get;
             set
             {
-                if(!isAlphaNumeric(value) && !(String)value.Contains("@"))
+                if(!Poliklinika.Models.Poliklinika.isAlphaNumeric(value) && !(String)value.Contains("@"))
                 {
                     throw new ArgumentException("Nije unesena valjana email adresa");
                 } else
@@ -84,12 +84,5 @@ namespace Poliklinika.Models
         public Osoba()
         {
         }
-
-        private static Boolean isAlphaNumeric(string strToCheck)
-        {
-            Regex rg = new Regex(@"^[a-zA-Z0-9\s,]*$");
-            return rg.IsMatch(strToCheck);
-        }
-
     }
 }
