@@ -9,6 +9,8 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Poliklinika.Models;
+
 
 namespace Poliklinika
 {
@@ -56,6 +58,8 @@ namespace Poliklinika
                 Console.WriteLine(e.ToString());
             }
             Console.ReadLine(); */
+            
+            Administrator.Instance.dodajPacijenta(new Login(new Pacijent("Emir", "Pita", "epita1@etf.unsa.ba", "Sarajevo", new DateTime(1998, 04, 30)), "epita1", "epita"));
 
             CreateWebHostBuilder(args).Build().Run();
         }
@@ -63,5 +67,6 @@ namespace Poliklinika
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
+        
     }
 }

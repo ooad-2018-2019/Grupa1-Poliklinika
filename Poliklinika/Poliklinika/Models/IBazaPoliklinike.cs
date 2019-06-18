@@ -14,7 +14,7 @@ namespace Poliklinika.Models
       void ukloniZaposlenika();
         void izlistajSvePacijente();
         void izlistajSvoOsoblje();
-
+        void dodajLogin (String username, String password, Int32 idOsobe);
         Int32 vratiNajveciID(String query);
 
     }

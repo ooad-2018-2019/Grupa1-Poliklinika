@@ -11,30 +11,25 @@ namespace Poliklinika.Models
       
     {
       
-        const String maxIdPacijentaQuery = "SELECT MAX(id) FROM dbo.Poliklinika_Pacijent";
-        const String maxIdOsobeQuery= "SELECT MAX(id) FROM dbo.Poliklinika_Osoba";
+        const String maxIdPacijentaQuery = "SELECT MAX(id) FROM dbo.Poliklinika_Pacijent;";
+        const String maxIdOsobeQuery= "SELECT MAX(id) FROM dbo.Poliklinika_Osoba;";
+        const String maxIdLoginQuery = "SELECT MAX(id) FROM dbo.Poliklinika_Login;";
 
-        private static Administrator instance = null;
-        private static readonly object padlock = new object();
+        private static Administrator instance;
 
-        Administrator()
-        {
-        }
+        private Administrator() { }
 
         public static Administrator Instance
-        {
-            get
             {
-                lock (padlock)
+            get
                 {
-                    if (instance == null)
+                if (instance == null)
                     {
-                        instance = new Administrator();
+                    instance = new Administrator();
                     }
-                    return instance;
+                return instance;
                 }
             }
-        }
 
 
 
@@ -83,25 +78,52 @@ namespace Poliklinika.Models
 ,[email]
 ,[MjestoRodjenja]
 FROM [dbo].[Poliklinika_Osoba] */
-SqlCommand cmd = new SqlCommand(@"INSERT INTO dbo.Poliklinika_Osoba (id,ime, prezime, DatumRodjenja, email, MjestoRodjenja)
+
+SqlCommand cmdZaTabeluOsoba= new SqlCommand(@"INSERT INTO dbo.Poliklinika_Osoba (id,ime, prezime, DatumRodjenja, email, MjestoRodjenja)
               VALUES (@id, @ime, @prezime, @DatumRodjenja, @email, @MjestoRodjenja )", connection);
-cmd.Parameters.Add(new SqlParameter("id", vratiNajveciID(maxIdPacijentaQuery)));
-cmd.Parameters.Add(new SqlParameter("ime", login.osoba.ime));
-cmd.Parameters.Add(new SqlParameter("prezime", login.osoba.prezime));
-cmd.Parameters.Add(new SqlParameter("DatumRodjenja", login.osoba.datumRodjenja));
-cmd.Parameters.Add(new SqlParameter("email", login.osoba.email));
-cmd.Parameters.Add(new SqlParameter("MjestoRodjenja", login.osoba.mjestoRodjenja));
+                    int maxId = vratiNajveciID(maxIdPacijentaQuery);
+cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("id", maxId));
+cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("ime", login.osoba.ime));
+cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("prezime", login.osoba.prezime));
+cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("DatumRodjenja", login.osoba.datumRodjenja));
+cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("email", login.osoba.email));
+cmdZaTabeluOsoba.Parameters.Add(new SqlParameter("MjestoRodjenja", login.osoba.mjestoRodjenja));
+cmdZaTabeluOsoba.ExecuteNonQuery();
 
-                    
-                    
-cmd.ExecuteNonQuery();
+                    //Dodajem pacijenta u tabelu pacijenata
+                SqlCommand cmdZaTabeluPacijent = new SqlCommand(@"INSERT INTO dbo.Poliklinika_Pacijent (id,idOsobeFK)
+              VALUES (@id, @idOsobeFK )", connection);
 
-}
+
+                 cmdZaTabeluPacijent.Parameters.Add(new SqlParameter("id", vratiNajveciID(maxIdPacijentaQuery) ));
+                 cmdZaTabeluPacijent.Parameters.Add(new SqlParameter("idOsobeFK", maxId));
+                    cmdZaTabeluPacijent.ExecuteNonQuery();
+                    //Dodajem login podatke u tabelu login
+                    SqlCommand cmdZaTabeluLogin = new SqlCommand(@"INSERT INTO dbo.Poliklinika_Login (id,username, password, idOsobeFK)
+              VALUES (@id, @username, @password, @idOsobeFK )", connection);
+                    cmdZaTabeluLogin.Parameters.Add(new SqlParameter("id", vratiNajveciID(maxIdLoginQuery)));
+                    cmdZaTabeluLogin.Parameters.Add(new SqlParameter("idOsobeFK", maxId));
+                    cmdZaTabeluLogin.Parameters.Add(new SqlParameter("username", login.username));
+                    cmdZaTabeluLogin.Parameters.Add(new SqlParameter("password", login.password));
+                    cmdZaTabeluLogin.ExecuteNonQuery();
+
+                    connection.Close();
+                    Console.WriteLine("Uspjesno dodan pacijent!");
+
+
+
+                    }
 }
 catch (SqlException e)
 {
 throw new Exception("Greska prilikom dobavljanja MAX id-a: " + e);
 }
+
+}
+
+
+        public void dodajLogin (String username, String password, Int32 idOsobe) {
+
 
 }
 
@@ -158,7 +180,7 @@ using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
 {
 
 Console.WriteLine("\nQuery data example:");
-Console.WriteLine("=========================================\n");
+Console.WriteLine(query);
 
 connection.Open();
 StringBuilder sb = new StringBuilder();
@@ -172,10 +194,22 @@ using (SqlCommand command = new SqlCommand(sql, connection))
 {
     using (SqlDataReader reader = command.ExecuteReader())
     {
-        //Ukoliko je tabela prazna
+                            //Ukoliko je tabela prazna
+                            int povratnaVrijednost = 0;
+                            Console.WriteLine(reader.FieldCount);
         if (reader.FieldCount == 0) return 0;
         reader.Read();
-        return reader.GetInt32(0);
+
+                     try
+                                {
+                                 povratnaVrijednost = reader.GetInt32(0);
+                                
+                                }
+                            catch (Exception)
+                                {
+                                return 0;
+                                }
+        return povratnaVrijednost;
      }
 }
 }
