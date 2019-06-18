@@ -8,8 +8,8 @@ namespace Poliklinika.Models
     public interface IBazaPoliklinike
     {
        
-        void dodajPacijenta(Pacijent osoba);
-       void ukloniPacijenta(Pacijent osoba);
+        void dodajPacijenta(Login osoba);
+       void ukloniPacijenta(Login osoba);
        void dodajZaposlenika();
       void ukloniZaposlenika();
         void izlistajSvePacijente();
