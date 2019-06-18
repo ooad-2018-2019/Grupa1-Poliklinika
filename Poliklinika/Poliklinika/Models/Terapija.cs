@@ -7,17 +7,22 @@ namespace Poliklinika.Models
 {
     public class Terapija
     {
-        public List<Lijek> lijekoviTerapije { get; set; }
-        public DateTime datumPocetak { get; set; }
-        public DateTime datumKraja { get; set; }
-        public String napomena { get; set; }
+        private List<Lijek> _lijekovi;
+        private DateTime _datumPocetka;
+        private DateTime _datumKraja;
+        private String _napomena;
+
+        public List<Lijek> Lijekovi { get => _lijekovi; set => _lijekovi = value; }
+        public DateTime DatumPocetka { get => _datumPocetka; set => _datumPocetka = value; }
+        public DateTime DatumKraja { get => _datumKraja; set => _datumKraja = value; }
+        public string Napomena { get => _napomena; set => _napomena = value; }
 
         public Terapija(List<Lijek> lijekoviTerapije, DateTime datumPocetak, DateTime datumKraja, string napomena)
         {
-            this.lijekoviTerapije = lijekoviTerapije;
-            this.datumPocetak = datumPocetak;
-            this.datumKraja = datumKraja;
-            this.napomena = napomena;
+            this.LijekoviTerapije = lijekoviTerapije;
+            this.DatumPocetak = datumPocetak;
+            this.DatumKraja = datumKraja;
+            this.Napomena = napomena;
         }
 
         public Terapija()

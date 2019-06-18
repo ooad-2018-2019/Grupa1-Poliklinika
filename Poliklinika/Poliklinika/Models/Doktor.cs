@@ -7,6 +7,22 @@ namespace Poliklinika.Models
 {
     public class Doktor : IUvidUKarton
     {
+        private String _specijalnost;
+
+        public string Specijalnost { get => _specijalnost;
+            set
+            {
+                if(!Poliklinika.Models.Poliklinika.isAlphanumeric(value))
+                {
+                    throw new ArgumentException("Specijalnost nije validna");
+                }
+                else
+                {
+                    _specijalnost = value;
+                }
+            }
+        }
+
         public void izlistajAktuelneNalaze()
         {
             throw new NotImplementedException();

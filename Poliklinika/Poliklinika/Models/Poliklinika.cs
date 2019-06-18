@@ -7,17 +7,22 @@ namespace Poliklinika.Models
 {
     public class Poliklinika
     {
-        public List<Osoba> listaZaposlenika { get; set; }
-        public List<Pacijent> listaPacijenata { get; set; }
-        public List<ZdravstveniKarton> listKartona { get; set; }
-        public List<Nalaz> listNalaza { get; set; }
+        private List<Osoba> _zaposlenici;
+        private List<Pacijent> _pacijent;
+        private List<ZdravstveniKarton> _kartoni;
+        private List<Nalaz> _nalazi;
+
+        public List<Osoba> Zaposlenici { get => _zaposlenici; set => _zaposlenici = value; }
+        public List<Pacijent> Pacijent { get => _pacijent; set => _pacijent = value; }
+        public List<ZdravstveniKarton> Kartoni { get => _kartoni; set => _kartoni = value; }
+        public List<Nalaz> Nalazi { get => _nalazi; set => _nalazi = value; }
 
         public Poliklinika(List<Osoba> listaZaposlenika, List<Pacijent> listaPacijenata, List<ZdravstveniKarton> listKartona, List<Nalaz> listNalaza)
         {
-            this.listaZaposlenika = listaZaposlenika;
-            this.listaPacijenata = listaPacijenata;
-            this.listKartona = listKartona;
-            this.listNalaza = listNalaza;
+            this.ListaZaposlenika = listaZaposlenika;
+            this.ListaPacijenata = listaPacijenata;
+            this.ListKartona = listKartona;
+            this.ListNalaza = listNalaza;
         }
 
         public Poliklinika()

@@ -33,7 +33,6 @@ namespace Poliklinika.Models
                 _rok = value;
             }
         }
-        public String DetaljiLijeka { get; set; }
         public int Kolicina { get;
             set
             {
@@ -44,6 +43,8 @@ namespace Poliklinika.Models
                 _kolicina = value;
             }
         } //odnosi se na kol u skladistu
+
+        public string Detalji { get => _detalji; set => _detalji = value; }
 
         public Lijek(string nazivLijeka, DateTime rokLijeka, string detaljiLijeka, int kolicina)
         {

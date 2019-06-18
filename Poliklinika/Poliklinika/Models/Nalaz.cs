@@ -21,8 +21,9 @@ namespace Poliklinika.Models
                 _datumNalaza = value;
             }
         }
-        public String DetaljiNalaza { get; set; }
-        public String TipNalaza { get; set; }
+
+        public string TipNalaza { get => _tipNalaza; set => _tipNalaza = value; }
+        public string DetaljiNalaza { get => _detaljiNalaza; set => _detaljiNalaza = value; }
 
         public Nalaz(String tip, DateTime datumNalaza, string detaljiNalaza)
         {
