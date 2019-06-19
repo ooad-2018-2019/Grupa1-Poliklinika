@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -15,9 +15,11 @@
                 <div class="form-row">
                     <div class="col">
                         <div class="form-row">
-                            <div class="col"><label class="text-center" style="margin: 21px;height: 24px;padding: -19px;font-size: 44px;">Dobro došli!</label>
+                            <div class="col">
+                                <label class="text-center" style="margin: 21px;height: 24px;padding: -19px;font-size: 44px;">Dobro došli!</label>
                                 <div class="form-row">
-                                    <div class="col"><label>Pregled rasporeda</label>
+                                    <div class="col">
+                                        <label>Pregled rasporeda</label>
                                         <div class="form-row">
                                             <div class="col"><button class="btn btn-primary" type="button">PREGLEDAJ</button></div>
                                         </div>
@@ -41,6 +43,10 @@
                         <div class="form-row">
                             <div class="col"><label class="col-form-label">Odaberite datum</label></div>
                             <div class="col"><input class="form-control" type="date"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col"><label class="col-form-label">Odaberite vrijeme</label></div>
+                            <div class="col"><input type="time" id="appt" min="9:00" max="18:00" required></div>
                         </div>
                         <div class="form-row">
                             <div class="col"></div>
