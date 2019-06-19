@@ -11,6 +11,8 @@ namespace Poliklinika.Controllers
     {
         private Administrator administrator = Administrator.Instance();
         public static DateTime unosDatuma;
+        public static DateTime unosVremena;
+
 
 
         
