@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\PacijentForm\**" />
+    <Content Remove="Views\PacijentForm\**" />
+    <EmbeddedResource Remove="Views\PacijentForm\**" />
+    <None Remove="Views\PacijentForm\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Views\Home\MainForm\login.cshtml" />
   </ItemGroup>
 
@@ -20,7 +27,6 @@
     <Folder Include="Views\Home\DoktorForm\" />
     <Folder Include="Views\Home\MedicinskSestraForm\" />
     <Folder Include="Views\Home\AdministratorForm\" />
-    <Folder Include="Views\PacijentForm\" />
   </ItemGroup>
 
 
