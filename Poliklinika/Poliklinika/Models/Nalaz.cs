@@ -11,7 +11,7 @@ namespace Poliklinika.Models
         private String _detaljiNalaza;
         private DateTime _datumNalaza;
 
-        public DateTime DatumNalaza { get;
+        public DateTime DatumNalaza { get { return _datumNalaza; }
             set
             {
                 if(value>=DateTime.Now)
@@ -28,8 +28,8 @@ namespace Poliklinika.Models
         public Nalaz(String tip, DateTime datumNalaza, string detaljiNalaza)
         {
             this.TipNalaza = tip;
-            this.datumNalaza = datumNalaza;
-            this.detaljiNalaza = detaljiNalaza;
+            this.DatumNalaza = datumNalaza;
+            this.DetaljiNalaza = detaljiNalaza;
         }
 
         public Nalaz()

@@ -22,7 +22,7 @@ namespace Poliklinika.Models
 
             set
             {
-                if(Poliklinika.Models.Poliklinika.isAlphaNumeric(value))
+                if(Poliklinika.isAlphaNumeric(value))
                 {
                     _ime = value;
                 }
@@ -32,10 +32,10 @@ namespace Poliklinika.Models
                 }
             }
         }
-        public String Prezime {  get;
+        public String Prezime {  get { return _prezime; }
             set
             {
-                if(Poliklinika.Models.Poliklinika.isAlphaNumeric(value))
+                if(Poliklinika.isAlphaNumeric(value))
                 {
                     _prezime = value;
                 } else
@@ -46,10 +46,10 @@ namespace Poliklinika.Models
         }
         public String Email
         {
-            get;
+            get { return _email; }
             set
             {
-                if(!Poliklinika.Models.Poliklinika.isAlphaNumeric(value) && !(String)value.Contains("@"))
+                if(!Poliklinika.isAlphaNumeric(value) && !value.Contains("@"))
                 {
                     throw new ArgumentException("Nije unesena valjana email adresa");
                 } else
@@ -58,8 +58,8 @@ namespace Poliklinika.Models
                 }
             }
         }
-        public String MjestoRodjenja { get; set; }
-        public DateTime DatumRodjenja {  get;
+        public String MjestoRodjenja { get { return _mjestoRodjenja; } set  { _mjestoRodjenja = value; } }
+        public DateTime DatumRodjenja {  get { return _datumRodjenja; }
             set
             {
               if(value<=Convert.ToDateTime("01/01/1900") || value>=DateTime.Now)

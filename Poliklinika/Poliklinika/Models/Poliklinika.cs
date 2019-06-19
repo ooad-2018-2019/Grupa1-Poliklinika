@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace Poliklinika.Models
 {
@@ -19,10 +20,10 @@ namespace Poliklinika.Models
 
         public Poliklinika(List<Osoba> listaZaposlenika, List<Pacijent> listaPacijenata, List<ZdravstveniKarton> listKartona, List<Nalaz> listNalaza)
         {
-            this.ListaZaposlenika = listaZaposlenika;
-            this.ListaPacijenata = listaPacijenata;
-            this.ListKartona = listKartona;
-            this.ListNalaza = listNalaza;
+            this.Zaposlenici = listaZaposlenika;
+            this.Pacijent = listaPacijenata;
+            this.Kartoni = listKartona;
+            this.Nalazi = listNalaza;
         }
 
         public Poliklinika()

@@ -9,13 +9,12 @@ namespace Poliklinika.Models
     {
        
         void dodajPacijenta(Login osoba);
-       void ukloniPacijenta(Login osoba);
-       void dodajZaposlenika();
-      void ukloniZaposlenika();
-        void izlistajSvePacijente();
-        void izlistajSvoOsoblje();
-        void dodajLogin (String username, String password, Int32 idOsobe);
-        Int32 vratiNajveciID(String query);
-
+      
+       void dodajZaposlenika(Login osoba);
+      void obrisiOsobu(Login osoba);
+      List<Osoba> dajListuPacijenata();
+        List<Osoba> vratiListuOsoblja();
+  Int32 vratiNajveciID(String query);
+        Int32 vratiIdPoLoginu(String username);
     }
 }

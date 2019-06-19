@@ -19,8 +19,8 @@ namespace Poliklinika.Models
 
         public Terapija(List<Lijek> lijekoviTerapije, DateTime datumPocetak, DateTime datumKraja, string napomena)
         {
-            this.LijekoviTerapije = lijekoviTerapije;
-            this.DatumPocetak = datumPocetak;
+            this.Lijekovi = lijekoviTerapije;
+            this.DatumPocetka = datumPocetak;
             this.DatumKraja = datumKraja;
             this.Napomena = napomena;
         }

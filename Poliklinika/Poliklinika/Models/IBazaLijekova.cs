@@ -7,7 +7,7 @@ namespace Poliklinika.Models
 {
     public interface IBazaLijekova
     {
-        Lijek dodajLijek();
+        void dodajLijek(Lijek lijek);
         void ukloniLijek(Lijek lijek);
 
         void azurirajLijek(Lijek lijek);

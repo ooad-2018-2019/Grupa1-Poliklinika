@@ -59,7 +59,7 @@ namespace Poliklinika
             }
             Console.ReadLine(); */
             
-            Administrator.Instance.dodajPacijenta(new Login(new Pacijent("Emir", "Pita", "epita1@etf.unsa.ba", "Sarajevo", new DateTime(1998, 04, 30)), "epita1", "epita"));
+          //  Administrator.Instance.dodajPacijenta(new Login(new Pacijent("Emir", "Pita", "epita1@etf.unsa.ba", "Sarajevo", new DateTime(1998, 04, 30)), "epita1", "epita"));
 
             CreateWebHostBuilder(args).Build().Run();
         }
