@@ -6,11 +6,8 @@
     "\\Poliklinika\\Poliklinika\\Controllers",
     "\\Poliklinika\\Poliklinika\\Models",
     "\\Poliklinika\\Poliklinika\\Views",
-    "\\Poliklinika\\Poliklinika\\Views\\Home",
-    "\\Poliklinika\\Poliklinika\\Views\\Home\\Shared",
-    "\\Poliklinika\\Poliklinika\\Views\\MainForm",
     "\\resources"
   ],
-  "SelectedNode": "\\Poliklinika\\Poliklinika\\Models\\Login.cs",
+  "SelectedNode": "\\Poliklinika\\Poliklinika\\Controllers\\PacijentController.cs",
   "PreviewInSolutionExplorer": false
 }
