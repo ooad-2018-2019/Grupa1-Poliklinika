@@ -8,7 +8,7 @@ namespace Poliklinika.Controllers
 {
     public class PacijentController : Controller
     {
-        private Administrator administrator = Administrator.Instance();
+        private Administrator administrator = Administrator.Instance();//aaaaaaaaa
         public static DateTime unosDatuma;
         public static DateTime unosVremena;
 
