@@ -3,6 +3,7 @@
     "",
     "\\Poliklinika",
     "\\Poliklinika\\Poliklinika",
+    "\\Poliklinika\\Poliklinika\\Controllers",
     "\\Poliklinika\\Poliklinika\\Models",
     "\\Poliklinika\\Poliklinika\\Views",
     "\\Poliklinika\\Poliklinika\\Views\\Home",
@@ -10,6 +11,6 @@
     "\\Poliklinika\\Poliklinika\\Views\\MainForm",
     "\\resources"
   ],
-  "SelectedNode": "\\Poliklinika\\Poliklinika.sln",
+  "SelectedNode": "\\Poliklinika\\Poliklinika\\Models\\Login.cs",
   "PreviewInSolutionExplorer": false
 }
