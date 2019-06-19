@@ -91,3 +91,6 @@ C:\Users\Lino\Source\Repos\Grupa1-Poliklinika\Poliklinika\Poliklinika\obj\Debug\
 C:\Users\Lino\Source\Repos\Grupa1-Poliklinika\Poliklinika\Poliklinika\obj\Debug\netcoreapp2.2\Razor\Views\MainForm\LogIn.g.cshtml.cs
 C:\Users\Lino\Source\Repos\Grupa1-Poliklinika\Poliklinika\Poliklinika\obj\Debug\netcoreapp2.2\Razor\Views\UserForms\Doktor.g.cshtml.cs
 C:\Users\Lino\Source\Repos\Grupa1-Poliklinika\Poliklinika\Poliklinika\obj\Debug\netcoreapp2.2\Razor\Views\UserForms\MedicinskaSestra.g.cshtml.cs
+C:\Users\Lino\Source\Repos\Grupa1-Poliklinika\Poliklinika\Poliklinika\obj\Debug\netcoreapp2.2\Razor\Views\MainForm\SignUp.g.cshtml.cs
+C:\Users\Lino\Source\Repos\Grupa1-Poliklinika\Poliklinika\Poliklinika\obj\Debug\netcoreapp2.2\Razor\Views\UserForms\Admin.g.cshtml.cs
+C:\Users\Lino\Source\Repos\Grupa1-Poliklinika\Poliklinika\Poliklinika\obj\Debug\netcoreapp2.2\Razor\Views\UserForms\Pacijent.g.cshtml.cs
