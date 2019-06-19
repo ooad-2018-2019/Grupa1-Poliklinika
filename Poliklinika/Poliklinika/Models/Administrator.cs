@@ -526,5 +526,7 @@ namespace Poliklinika.Models
                 throw new Exception("Greska prilikom dobavljanja MAX id-a: " + e);
                 }
             }
-        }
+
+       
+    }
     }
